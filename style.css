@@ -15,10 +15,7 @@ body {
 	height: auto;
 	margin: 50px auto;
 	background-color: #f8f8f8;
-
 }
-
-.page-header {}
 
 .page-header__menu {
 	display: flex;
