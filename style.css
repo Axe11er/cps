@@ -11,7 +11,7 @@ body {
 }
 
 .wrapper {
-	width: 320px;
+	width: 100vw;
 	height: auto;
 	margin: 50px auto;
 	background-color: #f8f8f8;
@@ -22,18 +22,18 @@ body {
 	align-items: flex-start;
 	padding: 18px 16px;
 	background-color: #fff;
-	justify-content: space-around;
+	justify-content: space-between;	
 }
 
 .page-header-menu__item {
+	
 	position: relative;
 	margin-right: 10px;
 }
 
 .page-header-menu__icon-groops {
 	display: flex;
-	justify-content: space-between;
-	width: 300px;
+	justify-content: space-between;	
 }
 
 .page-header-menu__burger-icon {
@@ -61,18 +61,19 @@ body {
 	height: 32px;
 	background-color: #EAEAEA;
 	position: relative;
-	left: 115px;
-	top: -50px;
+	left: 15px;
+	top: -15px;
 }
 
-.page-header-menu__icon-groop-1,
-.page-header-menu__icon-groop-2,
-.page-header-menu__icon-groop-3 {
+.page-header-menu__icon-groop-first,
+.page-header-menu__icon-groop-second,
+.page-header-menu__icon-groop-third {
 	display: flex;
 	justify-content: space-around;
+	
 }
 
-.page-header-menu__icon-groop-2 {
+.page-header-menu__icon-groop-second {
 	display: none;
 }
 
@@ -155,12 +156,12 @@ body {
 	margin-top: 32px;
 }
 
-.content__text {
+.main-content__text {
 	display: flex;
 	flex-flow: column;
 }
 
-.content__article {
+.main-content__article {
 	display: inline;
 	padding: 0 16px;
 	height: 100px;
@@ -187,16 +188,13 @@ body {
 	top: 0;
 }
 
-.content__read-more:checked~.content__article {
+.content__read-more:checked~.main-content__article {
 	height: auto;
 }
 
 
 
-@media (min-width: 768px) {
-	.wrapper {
-		width: 768px;
-	}
+@media (min-width: 768px) {	
 
 	.main__content {
 		flex-flow: row;
@@ -206,12 +204,13 @@ body {
 		justify-content: space-between;
 	}
 
-	.page-header-menu__icon-groop-1 {
+	.page-header-menu__icon-groop-first {
 		width: 200px;
 	}
 
-	.page-header-menu__icon-groop-2 {
+	.page-header-menu__icon-groop-second {
 		display: flex;
+		margin-right: 40px;
 	}
 
 	.page-header-menu__logo::after {
@@ -236,7 +235,7 @@ body {
 		height: 32px;
 		background-color: #EAEAEA;
 		position: relative;
-		left: 30px;
+		left: 25px;
 		top: -5px;
 	}
 
@@ -245,10 +244,7 @@ body {
 	}
 }
 
-@media (min-width: 1120px) {
-	.wrapper {
-		width: 1120px;
-	}
+@media (min-width: 1120px) {	
 
 	.page-header {
 		display: none;
@@ -266,7 +262,8 @@ body {
 		overflow: hidden;
 	}
 
-	.content__article {
+	.main-content__article {
 		height: 200px;
 	}
 }
+
