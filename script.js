@@ -1,5 +1,4 @@
 let menuLinks = document.querySelectorAll('.sidebar__menu-item-link');
-let menuLink = document.querySelector('.sidebar__menu-item-link');
 
 for (let i = 0; i < menuLinks.length; i++) {
 	
