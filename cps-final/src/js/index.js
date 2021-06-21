@@ -1,3 +1,2 @@
-import '../scss/style.scss';
-
-console.log('Works!');
+import { toggleBurgerMenu } from "../blocks/page-header/script/page-header";
+toggleBurgerMenu();
