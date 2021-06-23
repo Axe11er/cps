@@ -1,0 +1,90 @@
+.swiper-container {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.repair-gadgets {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.swiper-pagination {
+  top: 170px;
+}
+
+.repair-gadgets__title {}
+
+.repair-gadgets__container {
+  display: none;
+  height: 170px;
+  overflow: hidden;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  margin-bottom: 15px;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.repair-gadgets__item {
+  margin: 0 24px 24px 0;
+  width: 240px;
+  height: 160px;
+  display: flex;
+  flex-flow: wrap;
+  align-items: flex-start;
+  padding: 16px;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+
+}
+
+.repair-gadgets__item-title {
+  margin: 0;
+  background-color: #fff;
+  flex: 1;
+}
+
+.repair-gadgets__item-button {
+  align-self: flex-end;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+
+.repair-gadgets__read-more {
+  display: none;
+}
+
+.repair-gadgets__read-more-label {
+  display: none;
+  user-select: none;
+
+  @media (min-width: 768px) {
+    display: inline;
+  }
+}
+
+.repair-gadgets__read-more-label--closed::before {
+  content: url("../img/show-more-open.svg");
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  left: -10px;
+  top: 6px;
+}
+
+.repair-gadgets__read-more-label--opened::before {
+  content: url("../img/show-more-close.svg");
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  left: -10px;
+  top: 6px;
+}

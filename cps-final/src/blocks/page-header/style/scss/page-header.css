@@ -1,3 +1,9 @@
+@media (min-width: 1120px) {
+  .page-header {
+    display: none;
+  }
+}
+
 .page-header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,38 +54,13 @@
   top: -15px;
 }
 
-.page-header-menu__icon-groop-first,
-.page-header-menu__icon-groop-second,
-.page-header-menu__icon-groop-third {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.page-header-menu__icon-groop-second {
-  display: none;
-}
-
 @media (min-width: 768px) {
-  .page-header__menu {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .page-header-menu__icon-groop-first {
-    width: 200px;
-  }
-  .page-header-menu__icon-groop-second {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-right: 40px;
-  }
   .page-header-menu__logo::after {
     display: none;
   }
+}
+
+@media (min-width: 768px) {
   .page-header-menu__logo::before {
     content: "";
     display: inline-block;
@@ -90,7 +71,10 @@
     left: -15px;
     top: -15px;
   }
-  .profile-ico:after {
+}
+
+@media (min-width: 768px) {
+  .profile-ico::after {
     content: "";
     display: inline-block;
     width: 2px;
@@ -100,14 +84,34 @@
     left: 25px;
     top: -5px;
   }
-  .content-image__img {
-    min-width: 360px;
+}
+
+.page-header-menu__icon-groop-first,
+.page-header-menu__icon-groop-second,
+.page-header-menu__icon-groop-third {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (min-width: 768px) {
+  .page-header-menu__icon-groop-first {
+    width: 200px;
   }
 }
 
-@media (min-width: 1120px) {
-  .page-header {
-    display: none;
+.page-header-menu__icon-groop-second {
+  display: none;
+  margin-right: 40px;
+}
+
+@media (min-width: 768px) {
+  .page-header-menu__icon-groop-second {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 /*# sourceMappingURL=page-header.css.map */
