@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "TTLakes";
+  src:
+    url("../fonts/TTLakes-Regular.woff") format("woff");
+}
+
+body {
+  font-family: "TTLakes", serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #1B1C21;
+}
+
+.brands {
+  max-width: 1120px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  height: auto;
+  padding-bottom: 16px;
+}
+
+.brands__title {
+  text-transform: uppercase;
+  padding: 15px 15px 15px 45px;
+  font-size: 16px;
+  color: #7E7E82;
+  background-image: linear-gradient(to right, #f8f8f8 50%, #ffffff 100%);
+}
+
+.brands__container {
+  height: 100px;
+  display: none;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  overflow: hidden;
+  max-width: 1060px;
+  margin: 0 auto;
+
+  @media (min-width: 550px) {
+    display: flex;
+    height: 200px;
+  }
+}
+
+.brands__item {
+  box-sizing: border-box;
+  width: 240px;
+  height: 72px;
+  background-color: #ffffff;
+  margin: 16px 8px 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.brands__show-more {
+  display: none;
+}
+
+.brands__show-more-label {
+  margin-left: 60px;
+  position: relative;
+  display: none;
+
+  @media (min-width: 550px) {
+    display: inline;
+  }
+}
+
+.brands__show-more-label--closed::before {
+  content: url('../img/show-more-open.svg');
+  position: absolute;
+  left: -20px;
+  top: -3px;
+}
+
+.brands__show-more-label--opened::before {
+  content: url('../img/show-more-close.svg');
+  position: absolute;
+  left: -20px;
+  top: -3px;
+}
+
+.swiper-button-prew,
+.swiper-button-next {
+  display: none;
+}
+
+.swiper-container {
+  background-color: #f2f2f2;
+  height: 130px;
+
+  @media (min-width: 550px) {
+    display: none;
+  }
+}
+
+.swiper-pagination {
+  top: 100px;
+}

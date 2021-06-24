@@ -19,3 +19,15 @@ for (let i = 0; i < languageLinks.length; i++) {
 		languageLinks[i].classList.add('sidebar__language-list-item-link--active');
 	});
 }
+
+let sidebarCloseIcon = document.querySelector('.sidebar__icon.close-icon');
+let sidebarContainer = document.querySelector('.sidebar__container');
+let sidebarPopupBackground = document.querySelector('.sidebar__popup-background');
+
+sidebarCloseIcon.addEventListener('click', function () {
+	sidebarContainer.style.display = 'none';
+});
+
+sidebarPopupBackground.addEventListener('click', function () {
+	sidebarContainer.style.display = 'none';
+});

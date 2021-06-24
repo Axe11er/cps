@@ -45,11 +45,16 @@ body {
 .sidebar__container {
   width: auto;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
 
   @media (min-width: 1440px) {
     width: fit-content;
   }
+}
+
+.sidebar__popup-background {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .sidebar__header {
@@ -71,6 +76,11 @@ body {
   cursor: pointer;
   margin-right: 16px;
   transition: all 0.3s linear;
+
+  &:hover {
+    transform: scale(1.1);
+    filter: hue-rotate(-135deg);
+  }
 }
 
 .close-icon {
@@ -85,7 +95,6 @@ body {
 
 .search-icon {
   margin-right: 0;
-
 }
 
 .sidebar__menu-list,
@@ -95,7 +104,11 @@ body {
   list-style: none;
 }
 
-.sidebar__menu-item {}
+.sidebar__menu-item {
+  &:hover .sidebar__menu-item-link::after {
+    opacity: 1;
+  }
+}
 
 .sidebar__menu-item-link {
   text-decoration: none;
@@ -104,6 +117,24 @@ body {
   color: #1B1C21;
   padding: 5px;
   transition: all 0.3s linear;
+
+  &::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: rgba(5, 217, 255, 0.904);
+    position: absolute;
+    top: 25px;
+    left: 0;
+    transition: all 0.7s linear;
+    opacity: 0;
+  }
+
+  &:hover {
+    background: rgba(98, 235, 212, 0.2);
+    transform: scale(1.1);
+  }
 
   @media (min-width: 768px) {
     margin: 32px 0;
@@ -149,44 +180,17 @@ body {
 .sidebar__menu-item-link--active {
   color: #7E7E82;
   position: relative;
-}
 
-.sidebar__menu-item-link--active::before {
-  content: "";
-  display: block;
-  width: 5px;
-  height: 32px;
-  background-color: #41F6D7;
-  position: absolute;
-  left: -24px;
-  top: -3px;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-.sidebar__menu-item-link:hover {
-  background: rgba(98, 235, 212, 0.2);
-  transform: scale(1.1);
-}
-
-.sidebar__menu-item-link::after {
-  display: block;
-  content: "";
-  width: 100%;
-  height: 1px;
-  background: rgba(5, 217, 255, 0.904);
-  position: absolute;
-  top: 25px;
-  left: 0;
-  transition: all 0.7s linear;
-  opacity: 0;
-}
-
-.sidebar__menu-item:hover .sidebar__menu-item-link::after {
-  opacity: 1;
-}
-
-.sidebar__icon:hover {
-  transform: scale(1.1);
-  filter: hue-rotate(-135deg);
+  &::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 32px;
+    background-color: #41F6D7;
+    position: absolute;
+    left: -24px;
+    top: -3px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+  }
 }
