@@ -1200,17 +1200,19 @@ body {
 
 .prices__text {
   margin-top: 32px;
-  max-width: 420px; }
+  max-width: 420px;
+  padding: 10px; }
 
 .prices__offer-link {
   position: relative;
   font-weight: bold;
   text-decoration: none;
-  color: #1B1C21; }
+  color: #1B1C21;
+  padding: 10px; }
   .prices__offer-link::after {
     content: url(./static/more.svg);
     position: absolute;
-    top: -2px; }
+    top: 8px; }
 
 .prices__card {
   position: relative;
