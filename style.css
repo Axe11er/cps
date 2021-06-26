@@ -572,7 +572,7 @@ body {
   width: fit-content;
   margin: 0 auto;
   max-width: 1065px; }
-  @media (min-width: 550px) {
+  @media (min-width: 600px) {
     .brands__container {
       display: flex;
       height: 200px; } }
@@ -595,7 +595,7 @@ body {
   margin-left: 200px;
   position: relative;
   display: none; }
-  @media (min-width: 550px) {
+  @media (min-width: 600px) {
     .brands__show-more-label {
       display: inline; } }
 
@@ -618,7 +618,7 @@ body {
 .brands__swiper-container {
   background-color: #f2f2f2;
   height: 130px; }
-  @media (min-width: 550px) {
+  @media (min-width: 600px) {
     .brands__swiper-container {
       display: none; } }
 
@@ -897,7 +897,7 @@ body {
 .repair-gadgets__swiper-container {
   height: 220px;
   background-color: #f2f2f2; }
-  @media (min-width: 550px) {
+  @media (min-width: 600px) {
     .repair-gadgets__swiper-container {
       display: none; } }
 
@@ -920,7 +920,7 @@ body {
   margin-bottom: 15px;
   max-width: 1065px;
   margin: 0 auto; }
-  @media (min-width: 550px) {
+  @media (min-width: 600px) {
     .repair-gadgets__container {
       display: flex; } }
 
@@ -957,7 +957,7 @@ body {
       -ms-user-select: none;
           user-select: none;
   margin-left: 190px; }
-  @media (min-width: 550px) {
+  @media (min-width: 600px) {
     .repair-gadgets__read-more-label {
       display: inline; } }
 
@@ -1165,7 +1165,7 @@ body {
   border-radius: 6px;
   margin: 0 auto;
   display: none; }
-  @media (min-width: 550px) {
+  @media (min-width: 600px) {
     .prices__table {
       display: table; } }
 
@@ -1200,7 +1200,7 @@ body {
 
 .prices__text {
   margin-top: 32px;
-  width: 420px; }
+  max-width: 420px; }
 
 .prices__offer-link {
   position: relative;
@@ -1244,7 +1244,7 @@ body {
 .prices__swiper-container {
   background-color: #f2f2f2;
   height: 250px; }
-  @media (min-width: 550px) {
+  @media (min-width: 600px) {
     .prices__swiper-container {
       display: none; } }
 
