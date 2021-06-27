@@ -20,6 +20,8 @@ const switchTabs = () => {
 const switchReadMore = () => {
   readMore.addEventListener('change', function () {
     for (let i = 0; i < servicesTabs.length; i++) {
+		readMoreText.classList.remove('services__read-more-text--closed');
+		readMoreText.classList.add('services__read-more-text--opened');
       servicesContentTextAll[i].style.height = 'auto';
       readMoreText.textContent = 'Скрыть';
       if (!readMore.checked) {
@@ -29,8 +31,6 @@ const switchReadMore = () => {
         servicesContentTextAll[i].style.height = '105px';
       }
     }
-    readMoreText.classList.remove('services__read-more-text--closed');
-    readMoreText.classList.add('services__read-more-text--opened');
   });
 }
 

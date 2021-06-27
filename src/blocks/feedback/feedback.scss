@@ -1,4 +1,5 @@
 .feedback__container {
+background-color: $feedback__containerBgColor;
   z-index: 200;
   display: flex;
   flex-flow: wrap;
@@ -6,7 +7,7 @@
   align-items: flex-end;
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   top: 0;
   left: 0;
