@@ -535,11 +535,11 @@ body {
 .services__read-more-text--opened::before {
   content: url(./static/show-more-close.svg);
   display: inline-block;
-  width: -18px;
-  height: -3px;
+  width: 10px;
+  height: 10px;
   position: absolute;
-  left: -10px;
-  top: 6px; }
+  left: -18px;
+  top: -3px; }
 
 .services__image-img {
   -webkit-user-select: none;
