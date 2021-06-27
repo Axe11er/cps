@@ -332,7 +332,7 @@ body {
   display: flex;
   align-items: flex-start;
   padding: 18px 16px;
-  background-color: #fff;
+  background-color: #ffffff;
   justify-content: space-between; }
 
 .page-header__menu-item {
@@ -450,7 +450,7 @@ body {
 .services__check-status-link {
   text-decoration: none;
   font-weight: bold;
-  color: black; }
+  color: #000000; }
 
 .services__tabs {
   display: flex;
@@ -469,7 +469,7 @@ body {
 .services__tab {
   display: none; }
   .services__tab:checked + .services__tab-label {
-    background: #fff;
+    background: #ffffff;
     transform: scale(1.1);
     box-shadow: 0 0 0 2px #B8FFEC; }
 
@@ -1178,11 +1178,13 @@ body {
 
 .prices__table-data {
   color: #1B1C21;
-  padding: 24px;
-  border-bottom: 1px solid #EAEAEA; }
+  padding: 24px; }
   .prices__table-data:last-child {
     display: flex;
     justify-content: flex-end; }
+
+.prices__table-row {
+  border-bottom: 1px solid #EAEAEA; }
 
 .prices__buy-button {
   background: #FF3E79;
