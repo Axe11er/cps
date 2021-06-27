@@ -632,7 +632,6 @@ body {
   top: 100px; }
 
 .call__container {
-  background-color: #f2f2f2;
   z-index: 200;
   display: flex;
   flex-flow: wrap;
@@ -756,7 +755,6 @@ body {
   margin: 0 5px; }
 
 .feedback__container {
-  background-color: #f2f2f2;
   z-index: 200;
   display: flex;
   flex-flow: wrap;
