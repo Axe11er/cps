@@ -1277,10 +1277,10 @@ body {
       text-align: inherit; } }
 
 .page-footer__text {
-  margin-right: 30px; }
+  margin: 0; }
   @media (min-width: 768px) {
     .page-footer__text {
-      margin: 0; } }
+      margin-right: 30px; } }
   .page-footer__text:nth-child(2) {
     white-space: nowrap; }
   .page-footer__text:last-child {
