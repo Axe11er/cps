@@ -27,7 +27,7 @@
 }
 
 .page-footer__text {
-  margin: 0;
+  margin: 0 0 16px 0;
 }
 
 .page-footer__text:nth-child(2) {
