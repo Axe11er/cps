@@ -21,11 +21,6 @@
   right: 0;
   bottom: 0;
   display: none;
-  overflow-y: auto;
-}
-
-.feedback__container::-webkit-scrollbar {
-  display: none;
 }
 
 .feedback__popup-background {
@@ -73,7 +68,12 @@
   -ms-flex-order: -1;
   order: -1;
   background-color: #ffffff;
+  overflow-y: auto;
 }
+
+.feedback__form::-webkit-scrollbar {
+	display: none;
+ }
 
 @media (min-width: 1440px) {
   .feedback__form {

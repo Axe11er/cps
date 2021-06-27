@@ -1,5 +1,5 @@
 .feedback__container {
-background-color: $feedback__containerBgColor;
+  background-color: $feedback__containerBgColor;
   z-index: 200;
   display: flex;
   flex-flow: wrap;
@@ -14,11 +14,6 @@ background-color: $feedback__containerBgColor;
   right: 0;
   bottom: 0;
   display: none;
-  overflow-y: auto;
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
 }
 
 .feedback__popup-background {
@@ -54,6 +49,11 @@ background-color: $feedback__containerBgColor;
   height: 100vh;
   order: -1;
   background-color: #ffffff;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   @media (min-width: 1440px) {
     order: 0;

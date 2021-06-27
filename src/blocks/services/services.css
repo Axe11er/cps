@@ -183,6 +183,7 @@
 }
 
 .services__read-more-text {
+	position: relative;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -198,9 +199,9 @@
   display: inline-block;
   width: 10px;
   height: 10px;
-  position: relative;
-  left: -10px;
-  top: 6px;
+  position: absolute;
+  left: -18px;
+  top: -3px;
 }
 
 .services__read-more-text--opened::before {
@@ -208,9 +209,9 @@
   display: inline-block;
   width: 10px;
   height: 10px;
-  position: relative;
-  left: -10px;
-  top: 6px;
+  position: absolute;
+  left: -18px;
+  top: -3px;
 }
 
 .services__image-img {
