@@ -1,14 +1,11 @@
 let readMore = document.getElementById('read-more-id');
-let readMoreText = document.querySelector('.services__read-more-text')
-let servicesContentText = document.querySelector('.services__content-text');
-
-
+let readMoreText = document.querySelector('.services__read-more-text');
 let servicesTabs = document.querySelectorAll('.services__tab');
 let servicesContentTextAll = document.querySelectorAll('.services__content-text');
 
 const switchTabs = () => {
   for (let i = 0; i < servicesTabs.length; i++) {
-    servicesTabs[i].addEventListener('change', function () {
+    servicesTabs[i].addEventListener('click', function () {		 
       for (let j = 0; j < servicesTabs.length; j++) {
         servicesContentTextAll[j].style.display = 'none';
       }
