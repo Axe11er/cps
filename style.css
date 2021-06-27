@@ -520,23 +520,24 @@ body {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
-          user-select: none; }
+          user-select: none;
+  position: relative; }
 
 .services__read-more-text--closed::before {
   content: url(./static/show-more-open.svg);
   display: inline-block;
   width: 10px;
   height: 10px;
-  position: relative;
-  left: -10px;
-  top: 6px; }
+  position: absolute;
+  left: -18px;
+  top: -3px; }
 
 .services__read-more-text--opened::before {
   content: url(./static/show-more-close.svg);
   display: inline-block;
-  width: 10px;
-  height: 10px;
-  position: relative;
+  width: -18px;
+  height: -3px;
+  position: absolute;
   left: -10px;
   top: 6px; }
 
