@@ -769,10 +769,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  display: none;
-  overflow-y: auto; }
-  .feedback__container::-webkit-scrollbar {
-    display: none; }
+  display: none; }
 
 .feedback__popup-background {
   flex: 1;
@@ -802,7 +799,10 @@ body {
   line-height: 16px;
   height: 100vh;
   order: -1;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  overflow-y: auto; }
+  .feedback__form::-webkit-scrollbar {
+    display: none; }
   @media (min-width: 1440px) {
     .feedback__form {
       order: 0;
