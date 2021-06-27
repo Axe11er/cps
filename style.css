@@ -1278,6 +1278,9 @@ body {
 
 .page-footer__text {
   margin-right: 30px; }
+  @media (min-width: 768px) {
+    .page-footer__text {
+      margin: 0; } }
   .page-footer__text:nth-child(2) {
     white-space: nowrap; }
   .page-footer__text:last-child {
