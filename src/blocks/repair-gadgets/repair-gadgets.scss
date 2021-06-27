@@ -1,0 +1,102 @@
+.repair-gadgets {
+  max-width: auto	;
+  margin: auto;
+  padding-bottom: 20px;
+  background-color: $repairGadgetsBgColor;
+}
+
+.repair-gadgets__swiper-container {
+  height: 220px;
+  background-color: $repairGadgets__swiperContainerBgColor;
+
+  @media (min-width: 600px) {
+    display: none;
+  }
+}
+
+.repair-gadgets__swiper-pagination {
+  top: 190px;
+}
+
+.repair-gadgets__title {
+  text-transform: uppercase;
+  padding: 15px 15px 15px 45px;
+  font-size: 16px;
+  color: #7E7E82;
+  background-image: linear-gradient(to right, #f8f8f8 50%, #ffffff 100%);
+}
+
+.repair-gadgets__container {
+  display: none;
+  height: 200px;
+  overflow: hidden;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  margin-bottom: 15px;
+  max-width: 1065px;
+  margin: 0 auto;
+
+  @media (min-width: 600px) {
+    display: flex;
+  }
+}
+
+.repair-gadgets__item {
+  box-sizing: border-box;
+  width: 240px;
+  height: 160px;
+  background-color: $repairGadgets__itemBgColor;
+  margin: 16px 8px 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px;
+  border: 1px solid $repairGadgets__itemBorderColor;
+  border-radius: 6px;
+}
+
+.repair-gadgets__item-title {
+  margin: 0;
+  flex: 1;
+}
+
+.repair-gadgets__item-button {
+  align-self: flex-end;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+
+.repair-gadgets__read-more {
+  display: none;
+}
+
+.repair-gadgets__read-more-label {
+  display: none;
+  user-select: none;
+  margin-left: 16.5%;
+
+  @media (min-width: 600px) {
+    display: inline;
+  }
+}
+
+.repair-gadgets__read-more-label--closed::before {
+  content: url("./img/show-more-open.svg");
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  left: -10px;
+  top: 6px;
+}
+
+.repair-gadgets__read-more-label--opened::before {
+  content: url("./img/show-more-close.svg");
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  left: -10px;
+  top: 6px;
+}

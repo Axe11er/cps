@@ -1,0 +1,196 @@
+.feedback__container {
+  z-index: 200;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  overflow-y: auto;
+}
+
+.feedback__container::-webkit-scrollbar {
+  display: none;
+}
+
+.feedback__popup-background {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.feedback__close-button {
+  cursor: pointer;
+  padding-top: 20px;
+  margin-right: 280px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.feedback__close-button:hover {
+  -webkit-filter: hue-rotate(-135deg);
+          filter: hue-rotate(-135deg);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media (min-width: 1440px) {
+  .feedback__close-button {
+    position: absolute;
+    right: 200px;
+  }
+}
+
+.feedback__form {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 16px;
+  width: 320px;
+  color: #7E7E82;
+  font-size: 14px;
+  line-height: 16px;
+  height: 100vh;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  background-color: #ffffff;
+}
+
+@media (min-width: 1440px) {
+  .feedback__form {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    width: 440px;
+    -webkit-box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+            box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+  }
+}
+
+.feedback__form-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  color: #1B1C21;
+  margin-bottom: 24px;
+  margin-top: 25px;
+  position: relative;
+}
+
+.feedback__form-title::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 32px;
+  background-color: #41F6D7;
+  position: absolute;
+  left: -16px;
+  top: 0px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.feedback__form-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.feedback__form-item {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.feedback__form-username,
+.feedback__form-phone,
+.feedback__form-email,
+.feedback__form-message {
+  width: 288px;
+  height: 48px;
+  padding: 12px;
+  border: 1px solid #EAEAEA;
+  border-radius: 8px;
+  outline: none;
+  font-family: 'TTLakes', Arial, Helvetica, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.feedback__form-message {
+  resize: none;
+  height: 118px;
+}
+
+.feedback__form-submit-button {
+  border: none;
+  background: transparent;
+}
+
+.feedback__form-submit-button-text {
+  background: #FF3E79;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 136px;
+  height: 32px;
+  color: #FFFFFF;
+  border-radius: 16px;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.feedback__form-submit-button-text:hover {
+  -webkit-filter: hue-rotate(-135deg);
+          filter: hue-rotate(-135deg);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.feedback__form-processing-personal-data-link,
+.feedback__form-privacy-policy-link {
+  text-decoration: none;
+  color: #FF3E79;
+}
+
+.feedback__form-submit-button-img {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/*# sourceMappingURL=feedback.css.map */

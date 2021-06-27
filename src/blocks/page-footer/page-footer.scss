@@ -1,0 +1,36 @@
+.page-footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  flex-flow: column;
+  text-align: center;
+  align-items: center;
+  margin-top: 50px;
+
+  @media (min-width: 768px) {
+    flex-flow: row;
+    text-align: inherit;
+  }
+}
+
+.page-footer__text {
+  margin-right: 30px;
+
+  &:nth-child(2) {
+    white-space: nowrap;
+  }
+
+  &:last-child {
+    text-align: center;
+    margin-right: 0;
+
+    @media (min-width: 768px) {
+      text-align: right;
+    }
+  }
+}
+
+.page-footer__privacy-policy {
+  text-decoration: none;
+  color: $pageFooter__privacyPolicyColor;
+}

@@ -1,0 +1,139 @@
+.prices {
+  max-width: auto;
+  margin: 0 auto;
+  background-color: $pricesBgColor;
+}
+
+.prices__title {
+  text-transform: uppercase;
+  padding: 15px 15px 15px 45px;
+  font-size: 16px;
+  color: $prices__titleColor;
+  background-image: linear-gradient(to right, #f8f8f8 50%, #ffffff 100%);
+  margin-bottom: 50px;
+}
+
+.prices__table {
+  height: 324px;
+  width: 100%;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  background: $prices__tableBgColor;
+  border-radius: 6px;
+  margin: 0 auto;
+  display: none;
+
+  @media (min-width: 600px) {
+    display: table;
+  }
+}
+
+.prices__table-header {
+	font-weight: normal;
+  text-align: left;
+  color: $prices__tableHeaderColor;
+  background: $prices__tableHeaderBgColor;
+  padding: 24px;
+}
+
+.prices__table-data {
+  color: $prices__tableDataColor;
+  padding: 24px;
+
+  &:last-child {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.prices__table-row {
+	border-bottom: 1px solid $prices__tableRowBorderColor;
+}
+
+.prices__buy-button {
+  background: $prices__buyButtonBgColor;
+  border-radius: 16px;
+  width: 119px;
+  height: 32px;
+  text-decoration: none;
+  color: $prices__buyButtonColor;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transition: all 0.3s linear;
+  &:hover {
+	  transform: scale(1.1);
+	  filter: hue-rotate(-135deg);
+  }
+}
+
+.prices__buy-button-img {
+  margin: 0 5px;
+
+}
+
+.prices__text {
+  margin-top: 32px;
+  max-width: 420px;
+  padding: 10px;
+}
+
+.prices__offer-link {
+  position: relative;
+  font-weight: bold;
+  text-decoration: none;
+  color: $prices__offerLinkColor;
+  padding: 10px;
+
+  &::after {
+    content: url('./img/more.svg');
+    position: absolute;
+    top: 8px;
+  }
+}
+
+.prices__card {
+  position: relative;
+  box-sizing: border-box;
+  width: 260px;
+  height: 200px;
+  padding: 4px 16px;
+  background: $prices__cardBgColor;
+  border-radius: 6px;
+}
+
+.prices__card-title {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  color: $prices__cardTitleColor;
+  margin-bottom: 0px;
+  padding: 0;
+}
+
+.prices__card-text {
+  font-size: 14px;
+  line-height: 18px;
+  color: $prices__cardTextColor;
+  padding: 0;
+  margin: 4px 0;
+}
+
+.prices__card-buy-button {
+	position: absolute;
+	bottom: 10%;
+	right: 5%;
+}
+
+.prices__swiper-container {
+	background-color: $prices__swiperContainerBgColor;
+	height: 250px;
+ 
+	@media (min-width: 600px) {
+	  display: none;
+	}
+ }
+ 
+ .prices__swiper-pagination {
+	top: 215px;
+ }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./feedback.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="feedback__container">
+    <div class="feedback__popup-background"></div>
+    <form action="" method="POST" name="feedback-form" class="feedback__form">
+      <div class="feedback__close-button"><img src="./img/close.svg" alt="Закрыть"></div>
+      <legend class="feedback__form-title">Обратная связь</legend>
+      <ul class="feedback__form-list">
+        <li class="feedback__form-item">
+          <input type="text" name="username" id="username-id" placeholder="Имя" class="feedback__form-username">
+        </li>
+        <li class="feedback__form-item">
+          <input type="tel" name="feedback-phone" id="feedback-phone-id" placeholder="Телефон" class="feedback__form-phone">
+        </li>
+        <li class="feedback__form-item">
+          <input type="email" name="email" id="email-id" placeholder="Электронная почта" class="feedback__form-email">
+        </li>
+        <li class="feedback__form-item">
+          <textarea name="message" id="message-id" cols="25" rows="6" placeholder="Сообщение"
+            class="feedback__form-message"></textarea>
+        </li>
+        <li class="feedback__form-item">
+          <p class="feedback__form-license-agreement">Нажимая “отправить”, вы даете согласие на <a href="#"
+              class="feedback__form-processing-personal-data-link">обработку персональных данных</a> и соглашаетесь с
+            нашей <a href="" class="feedback__form-privacy-policy-link">политикой конфиденциальности</a></p>
+        </li>
+        <li class="feedback__form-item">
+			 <button name="submit-button" id="submit-button-id" class="feedback__form-submit-button"><span class="feedback__form-submit-button-text">Отправить<img
+				src="./img/goside.svg" alt="" class="feedback__form-submit-button-img"></span></button>
+        </li>
+      </ul>
+    </form>
+  </div>
+
+  <script src="./js/feedback.js"></script>
+</body>
+
+</html>
