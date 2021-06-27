@@ -1277,7 +1277,7 @@ body {
       text-align: inherit; } }
 
 .page-footer__text {
-  margin: 0; }
+  margin: 0 0 16px 0; }
   @media (min-width: 768px) {
     .page-footer__text {
       margin-right: 30px; } }
