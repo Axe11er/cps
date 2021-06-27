@@ -27,7 +27,7 @@
 }
 
 .page-footer__text {
-  margin-right: 30px;
+  margin: 0;
 }
 
 .page-footer__text:nth-child(2) {
@@ -41,7 +41,7 @@
 
 @media (min-width: 768px) {
   .page-footer__text {
-    margin: 0;
+    margin-right: 30px;
   }
 
   .page-footer__text:last-child {
