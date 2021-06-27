@@ -23,8 +23,10 @@
       </div>
       <div class="page-header__menu-icon-groops">
         <div class="page-header__menu-icon-groop-second">
-          <div class="page-header__menu-item page-header__call-icon"><a href="#"><img src="./img/call.svg" alt=""></a></div>
-          <div class="page-header__menu-item page-header__chat-icon"><a href="#"><img src="./img/chat.svg" alt=""></a></div>
+          <div class="page-header__menu-item page-header__call-icon"><a href="#"><img src="./img/call.svg" alt=""></a>
+          </div>
+          <div class="page-header__menu-item page-header__chat-icon"><a href="#"><img src="./img/chat.svg" alt=""></a>
+          </div>
           <div class="page-header__menu-item page-header__profile-icon"><a href="#"><img src="./img/profile.svg" alt=""></a></div>
         </div>
         <div class="page-header__menu-icon-groop-third">
@@ -55,19 +57,21 @@
       <div class="services__tabs">
         <input type="radio" name="services" id="services-id1" class="services__tab" checked="checked">
         <label for="services-id1" class="services__tab-label"><span class="services__tab-text">Ремонтируемые
-            бренды</span></label>
+              бренды</span></label>				
         <input type="radio" name="services" id="services-id2" class="services__tab">
         <label for="services-id2" class="services__tab-label"><span class="services__tab-text">Ремонтируемые
-            устройства</span></label>
+              устройства</span></label>
         <input type="radio" name="services" id="services-id3" class="services__tab">
-        <label for="services-id3" class="services__tab-label"><span class="services__tab-text">Цены на
-            услуги</span></label>
+        <label for="services-id3" class="services__tab-label"><span class="services__tab-text">Цены
+              на
+              услуги</span></label>
         <input type="radio" name="services" id="services-id4" class="services__tab">
-        <label for="services-id4" class="services__tab-label"><span class="services__tab-text">Адреса сервисных
-            центров</span></label>
+        <label for="services-id4" class="services__tab-label"><span class="services__tab-text">Адреса
+              сервисных
+              центров</span></label>
         <input type="radio" name="services" id="services-id5" class="services__tab">
         <label for="services-id5" class="services__tab-label"><span class="services__tab-text">Специальные
-            цены</span></label>
+              цены</span></label>
         <input type="radio" name="services" id="services-id6" class="services__tab">
         <label for="services-id6" class="services__tab-label"><span class="services__tab-text">Отзывы</span></label>
       </div>
@@ -128,7 +132,48 @@
         <div class="services__image"><img src="./img/content-image.jpg" alt="" class="services__image-img"></div>
       </section>
     </div>
-    <div class="brands">
+    <div class="brands" id="brands-id">
+		<div class="brands__swiper">
+			<div class="swiper-container brands__swiper-container">
+			  <div class="swiper-wrapper">
+				 <div class="swiper-slide"><a href="#">
+					  <div class="brands__item"><img src="./img/Lenovo.svg" alt="Lenovo" class="brands__image"><img src="./img/go.svg" alt="go" class="brands__go-icon"></div>
+					</a></div>
+				 <div class="swiper-slide"><a href="#">
+					  <div class="brands__item"><img src="./img/Samsung.svg" alt="Samsung" class="brands__image"><img src="./img/go.svg" alt="go" class="brands__go-icon"></div>
+					</a></div>
+				 <div class="swiper-slide"><a href="#">
+					  <div class="brands__item"><img src="./img/Apple.svg" alt="Apple" class="brands__image"><img src="./img/go.svg" alt="go" class="brands__go-icon"></div>
+					</a></div>
+				 <div class="swiper-slide"><a href="#">
+					  <div class="brands__item"><img src="./img/ViewSonic.svg" alt="ViewSonic" class="brands__image"><img src="./img/go.svg" alt="go" class="brands__go-icon"></div>
+					</a></div>
+				 <div class="swiper-slide"><a href="#">
+					  <div class="brands__item"><img src="./img/Bosch.svg" alt="Bosch" class="brands__image"><img src="./img/go.svg" alt="go" class="brands__go-icon"></div>
+					</a></div>
+				 <div class="swiper-slide"><a href="#">
+					  <div class="brands__item"><img src="./img/HP.svg" alt="HP" class="brands__image"><img src="./img/go.svg" alt="go" class="brands__go-icon"></div>
+					</a></div>
+				 <div class="swiper-slide"><a href="#">
+					  <div class="brands__item"><img src="./img/Acer.svg" alt="Acer" class="brands__image"><img src="./img/go.svg" alt="go" class="brands__go-icon"></div>
+					</a></div>
+				 <div class="swiper-slide"><a href="#">
+					  <div class="brands__item"><img src="./img/Sony.svg" alt="Sony" class="brands__image"><img src="./img/go.svg" alt="go" class="brands__go-icon"></div>
+					</a></div>
+				 <div class="swiper-slide"><a href="#">
+					  <div class="brands__item"><img src="./img/Lenovo.svg" alt="Lenovo" class="brands__image"><img src="./img/go.svg" alt="go" class="brands__go-icon"></div>
+					</a></div>
+				 <div class="swiper-slide"><a href="#">
+					  <div class="brands__item"><img src="./img/Samsung.svg" alt="Samsung" class="brands__image"><img src="./img/go.svg" alt="go" class="brands__go-icon"></div>
+					</a></div>
+				 <div class="swiper-slide"><a href="#">
+					  <div class="brands__item"><img src="./img/Apple.svg" alt="Apple" class="brands__image"><img src="./img/go.svg" alt="go" class="brands__go-icon"></div>
+					</a></div>
+			  </div>
+			  <div class="swiper-pagination">
+			  </div>
+			</div>
+		 </div>
       <h1 class="brands__title">Ремонт техники различных брендов</h1>
       <div class="brands__container">
         <a href="#">
@@ -168,48 +213,69 @@
       <input type="checkbox" name="show-more" id="show-more" class="brands__show-more">
       <label for="show-more" class="brands__show-more-label brands__show-more-label--closed">Показать все</label>
     </div>
-    <div class="brands__swiper">
-      <div class="swiper-container brands__swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><a href="#">
-              <div class="brands__item"><img src="./img/Lenovo.svg" alt="Lenovo" class="brands__image"><img src="./img/go.svg" alt="go" class="brands__go-icon"></div>
-            </a></div>
-          <div class="swiper-slide"><a href="#">
-              <div class="brands__item"><img src="./img/Samsung.svg" alt="Samsung" class="brands__image"><img src="./img/go.svg" alt="go" class="brands__go-icon"></div>
-            </a></div>
-          <div class="swiper-slide"><a href="#">
-              <div class="brands__item"><img src="./img/Apple.svg" alt="Apple" class="brands__image"><img src="./img/go.svg" alt="go" class="brands__go-icon"></div>
-            </a></div>
-          <div class="swiper-slide"><a href="#">
-              <div class="brands__item"><img src="./img/ViewSonic.svg" alt="ViewSonic" class="brands__image"><img src="./img/go.svg" alt="go" class="brands__go-icon"></div>
-            </a></div>
-          <div class="swiper-slide"><a href="#">
-              <div class="brands__item"><img src="./img/Bosch.svg" alt="Bosch" class="brands__image"><img src="./img/go.svg" alt="go" class="brands__go-icon"></div>
-            </a></div>
-          <div class="swiper-slide"><a href="#">
-              <div class="brands__item"><img src="./img/HP.svg" alt="HP" class="brands__image"><img src="./img/go.svg" alt="go" class="brands__go-icon"></div>
-            </a></div>
-          <div class="swiper-slide"><a href="#">
-              <div class="brands__item"><img src="./img/Acer.svg" alt="Acer" class="brands__image"><img src="./img/go.svg" alt="go" class="brands__go-icon"></div>
-            </a></div>
-          <div class="swiper-slide"><a href="#">
-              <div class="brands__item"><img src="./img/Sony.svg" alt="Sony" class="brands__image"><img src="./img/go.svg" alt="go" class="brands__go-icon"></div>
-            </a></div>
-          <div class="swiper-slide"><a href="#">
-              <div class="brands__item"><img src="./img/Lenovo.svg" alt="Lenovo" class="brands__image"><img src="./img/go.svg" alt="go" class="brands__go-icon"></div>
-            </a></div>
-          <div class="swiper-slide"><a href="#">
-              <div class="brands__item"><img src="./img/Samsung.svg" alt="Samsung" class="brands__image"><img src="./img/go.svg" alt="go" class="brands__go-icon"></div>
-            </a></div>
-          <div class="swiper-slide"><a href="#">
-              <div class="brands__item"><img src="./img/Apple.svg" alt="Apple" class="brands__image"><img src="./img/go.svg" alt="go" class="brands__go-icon"></div>
-            </a></div>
-        </div>
-        <div class="swiper-pagination">
-        </div>
-      </div>
-    </div>
-    <div class="repair-gadgets">
+    <div class="repair-gadgets" id="gadgets-id">
+		<div class="repair-gadgets__swiper">
+			<div class="swiper-container repair-gadgets__swiper-container">
+			  <div class="swiper-wrapper">
+				 <div class="swiper-slide">
+					<div class="repair-gadgets__item">
+					  <p class="repair-gadgets__item-title">Ремонт ноутбуков</p>
+					  <a href="#" class="repair-gadgets__item-button"><img src="./img/go.svg" alt=""></a>
+					</div>
+				 </div>
+				 <div class="swiper-slide">
+					<div class="repair-gadgets__item">
+					  <p class="repair-gadgets__item-title">Ремонт планшетов </p>
+					  <a href="#" class="repair-gadgets__item-button"><img src="./img/go.svg" alt=""></a>
+					</div>
+				 </div>
+				 <div class="swiper-slide">
+					<div class="repair-gadgets__item">
+					  <p class="repair-gadgets__item-title">Ремонт ПК </p>
+					  <a href="#" class="repair-gadgets__item-button"><img src="./img/go.svg" alt=""></a>
+					</div>
+				 </div>
+				 <div class="swiper-slide">
+					<div class="repair-gadgets__item">
+					  <p class="repair-gadgets__item-title">Ремонт мониторов </p>
+					  <a href="#" class="repair-gadgets__item-button"><img src="./img/go.svg" alt=""></a>
+					</div>
+				 </div>
+				 <div class="swiper-slide">
+					<div class="repair-gadgets__item">
+					  <p class="repair-gadgets__item-title">Lorem, ipsum dolor.</p>
+					  <a href="#" class="repair-gadgets__item-button"><img src="./img/go.svg" alt=""></a>
+					</div>
+				 </div>
+				 <div class="swiper-slide">
+					<div class="repair-gadgets__item">
+					  <p class="repair-gadgets__item-title">Lorem, ipsum dolor.</p>
+					  <a href="#" class="repair-gadgets__item-button"><img src="./img/go.svg" alt=""></a>
+					</div>
+				 </div>
+				 <div class="swiper-slide">
+					<div class="repair-gadgets__item">
+					  <p class="repair-gadgets__item-title">Lorem ipsum dolor sit.</p>
+					  <a href="#" class="repair-gadgets__item-button"><img src="./img/go.svg" alt=""></a>
+					</div>
+				 </div>
+				 <div class="swiper-slide">
+					<div class="repair-gadgets__item">
+					  <p class="repair-gadgets__item-title">Lorem, ipsum dolor.</p>
+					  <a href="#" class="repair-gadgets__item-button"><img src="./img/go.svg" alt=""></a>
+					</div>
+				 </div>
+				 <div class="swiper-slide">
+					<div class="repair-gadgets__item">
+					  <p class="repair-gadgets__item-title">Lorem, ipsum.</p>
+					  <a href="#" class="repair-gadgets__item-button"><img src="./img/go.svg" alt=""></a>
+					</div>
+				 </div>
+			  </div>
+			  <div class="swiper-pagination repair-gadgets__swiper-pagination">
+			  </div>
+			</div>
+		 </div>
       <h2 class="repair-gadgets__title">Ремонт различных видов техники</h2>
       <div class="repair-gadgets__container">
         <div class="repair-gadgets__item">
@@ -251,192 +317,130 @@
       </div>
       <input type="checkbox" class="repair-gadgets__read-more" name="repair-gadgets__read-more" id="repair-gadgets__read-more-id"> <label for="repair-gadgets__read-more-id" class="repair-gadgets__read-more-label repair-gadgets__read-more-label--closed">Показать все</label>
     </div>
-    <div class="repair-gadgets__swiper">
-      <div class="swiper-container repair-gadgets__swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="repair-gadgets__item">
-              <p class="repair-gadgets__item-title">Ремонт ноутбуков</p>
-              <a href="#" class="repair-gadgets__item-button"><img src="./img/go.svg" alt=""></a>
+    <div class="prices" id="prices-id">
+      <h2 class="prices__title">Цены на услуги</h2>
+      <table class="prices__table">
+        <tr class="prices__table-row">
+          <th class="prices__table-header">Ремонтные услуги</th>
+          <th class="prices__table-header">Цена</th>
+          <th class="prices__table-header">Срок</th>
+          <th class="prices__table-header"></th>
+        </tr>
+        <tr class="prices__table-row">
+          <td class="prices__table-data">Диагностика</td>
+          <td class="prices__table-data">Бесплатно</td>
+          <td class="prices__table-data">30 мин</td>
+          <td class="prices__table-data"><a href="#" class="prices__buy-button">Заказать<img src="./img/goside.svg" alt="go" class="prices__buy-button-img"></a></td>
+        </tr>
+        <tr class="prices__table-row">
+          <td class="prices__table-data">Замена дисплея</td>
+          <td class="prices__table-data">1000 ₽</td>
+          <td class="prices__table-data">30 - 120 мин</td>
+          <td class="prices__table-data"><a href="#" class="prices__buy-button">Заказать<img src="./img/goside.svg" alt="go" class="prices__buy-button-img"></a></td>
+        </tr>
+        <tr class="prices__table-row">
+          <td class="prices__table-data">Замена полифонического динамика</td>
+          <td class="prices__table-data">1000 ₽</td>
+          <td class="prices__table-data">30 - 120 мин</td>
+          <td class="prices__table-data"><a href="#" class="prices__buy-button">Заказать<img src="./img/goside.svg" alt="go" class="prices__buy-button-img"></a></td>
+        </tr>
+        <tr class="prices__table-row">
+          <td class="prices__table-data">Тестирование с выдачей технического заключения</td>
+          <td class="prices__table-data">1000 ₽</td>
+          <td class="prices__table-data">30 - 120 мин</td>
+          <td class="prices__table-data"><a href="#" class="prices__buy-button">Заказать<img src="./img/goside.svg" alt="go" class="prices__buy-button-img"></a></td>
+        </tr>
+        <tr class="prices__table-row">
+          <td class="prices__table-data">Замена программного обеспечения</td>
+          <td class="prices__table-data">1000 ₽</td>
+          <td class="prices__table-data">30 - 120 мин</td>
+          <td class="prices__table-data"><a href="#" class="prices__buy-button">Заказать<img src="./img/goside.svg" alt="go" class="prices__buy-button-img"></a></td>
+        </tr>
+      </table>
+      <div class="prices__swiper">
+        <div class="swiper-container prices__swiper-container">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="prices__card">
+                <h3 class="prices__card-title">Ремонтные услуги</h3>
+                <p class="prices__card-text">Диагностика</p>
+                <h3 class="prices__card-title">Цена</h3>
+                <p class="prices__card-text">Бесплатно</p>
+                <h3 class="prices__card-title">Срок</h3>
+                <p class="prices__card-text">30 мин</p>
+                <a href="#" class="prices__card-buy-button prices__buy-button">Заказать<img src="./img/goside.svg" alt="go" class="prices__buy-button-img">
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="prices__card">
+                <h3 class="prices__card-title">Ремонтные услуги</h3>
+                <p class="prices__card-text">Замена дисплея</p>
+                <h3 class="prices__card-title">Цена</h3>
+                <p class="prices__card-text">1000 ₽</p>
+                <h3 class="prices__card-title">Срок</h3>
+                <p class="prices__card-text">30 - 120 мин</p>
+                <a href="#" class="prices__card-buy-button prices__buy-button">Заказать<img src="./img/goside.svg" alt="go" class="prices__buy-button-img">
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="prices__card">
+                <h3 class="prices__card-title">Ремонтные услуги</h3>
+                <p class="prices__card-text">Замена полифонического динамика</p>
+                <h3 class="prices__card-title">Цена</h3>
+                <p class="prices__card-text">1000 ₽</p>
+                <h3 class="prices__card-title">Срок</h3>
+                <p class="prices__card-text">30 - 120 мин</p>
+                <a href="#" class="prices__card-buy-button prices__buy-button">Заказать<img src="./img/goside.svg" alt="go" class="prices__buy-button-img">
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="prices__card">
+                <h3 class="prices__card-title">Ремонтные услуги</h3>
+                <p class="prices__card-text">Тестирование с выдачей технического заключения</p>
+                <h3 class="prices__card-title">Цена</h3>
+                <p class="prices__card-text">1000 ₽</p>
+                <h3 class="prices__card-title">Срок</h3>
+                <p class="prices__card-text">30 - 120 мин</p>
+                <a href="#" class="prices__card-buy-button prices__buy-button">Заказать<img src="./img/goside.svg" alt="go" class="prices__buy-button-img">
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="prices__card">
+                <h3 class="prices__card-title">Ремонтные услуги</h3>
+                <p class="prices__card-text">Замена программного обеспечения</p>
+                <h3 class="prices__card-title">Цена</h3>
+                <p class="prices__card-text">1000 ₽</p>
+                <h3 class="prices__card-title">Срок</h3>
+                <p class="prices__card-text">30 - 120 мин</p>
+                <a href="#" class="prices__card-buy-button prices__buy-button">Заказать<img src="./img/goside.svg" alt="go" class="prices__buy-button-img">
+                </a>
+              </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="repair-gadgets__item">
-              <p class="repair-gadgets__item-title">Ремонт планшетов </p>
-              <a href="#" class="repair-gadgets__item-button"><img src="./img/go.svg" alt=""></a>
-            </div>
+          <div class="swiper-pagination prices__swiper-pagination">
           </div>
-          <div class="swiper-slide">
-            <div class="repair-gadgets__item">
-              <p class="repair-gadgets__item-title">Ремонт ПК </p>
-              <a href="#" class="repair-gadgets__item-button"><img src="./img/go.svg" alt=""></a>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="repair-gadgets__item">
-              <p class="repair-gadgets__item-title">Ремонт мониторов </p>
-              <a href="#" class="repair-gadgets__item-button"><img src="./img/go.svg" alt=""></a>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="repair-gadgets__item">
-              <p class="repair-gadgets__item-title">Lorem, ipsum dolor.</p>
-              <a href="#" class="repair-gadgets__item-button"><img src="./img/go.svg" alt=""></a>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="repair-gadgets__item">
-              <p class="repair-gadgets__item-title">Lorem, ipsum dolor.</p>
-              <a href="#" class="repair-gadgets__item-button"><img src="./img/go.svg" alt=""></a>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="repair-gadgets__item">
-              <p class="repair-gadgets__item-title">Lorem ipsum dolor sit.</p>
-              <a href="#" class="repair-gadgets__item-button"><img src="./img/go.svg" alt=""></a>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="repair-gadgets__item">
-              <p class="repair-gadgets__item-title">Lorem, ipsum dolor.</p>
-              <a href="#" class="repair-gadgets__item-button"><img src="./img/go.svg" alt=""></a>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="repair-gadgets__item">
-              <p class="repair-gadgets__item-title">Lorem, ipsum.</p>
-              <a href="#" class="repair-gadgets__item-button"><img src="./img/go.svg" alt=""></a>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination repair-gadgets__swiper-pagination">
         </div>
       </div>
+      <p class="prices__text">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для
+        получения
+        коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
+      <p class="prices__offer"><a href="#" class="prices__offer-link">Получить коммерческое предложение</a></p>
     </div>
-    <div class="prices">
-		<h2 class="prices__title">Цены на услуги</h2>
-		<table class="prices__table">
-		  <tr class="prices__table-row">
-			 <th class="prices__table-header">Ремонтные услуги</th>
-			 <th class="prices__table-header">Цена</th>
-			 <th class="prices__table-header">Срок</th>
-			 <th class="prices__table-header"></th>
-		  </tr>
-		  <tr class="prices__table-row">
-			 <td class="prices__table-data">Диагностика</td>
-			 <td class="prices__table-data">Бесплатно</td>
-			 <td class="prices__table-data">30 мин</td>
-			 <td class="prices__table-data"><a href="#" class="prices__buy-button">Заказать<img src="./img/goside.svg" alt="go" class="prices__buy-button-img"></a></td>
-		  </tr>
-		  <tr class="prices__table-row">
-			 <td class="prices__table-data">Замена дисплея</td>
-			 <td class="prices__table-data">1000 ₽</td>
-			 <td class="prices__table-data">30 - 120 мин</td>
-			 <td class="prices__table-data"><a href="#" class="prices__buy-button">Заказать<img src="./img/goside.svg" alt="go" class="prices__buy-button-img"></a></td>
-		  </tr>
-		  <tr class="prices__table-row">
-			 <td class="prices__table-data">Замена полифонического динамика</td>
-			 <td class="prices__table-data">1000 ₽</td>
-			 <td class="prices__table-data">30 - 120 мин</td>
-			 <td class="prices__table-data"><a href="#" class="prices__buy-button">Заказать<img src="./img/goside.svg" alt="go" class="prices__buy-button-img"></a></td>
-		  </tr>
-		  <tr class="prices__table-row">
-			 <td class="prices__table-data">Тестирование с выдачей технического заключения</td>
-			 <td class="prices__table-data">1000 ₽</td>
-			 <td class="prices__table-data">30 - 120 мин</td>
-			 <td class="prices__table-data"><a href="#" class="prices__buy-button">Заказать<img src="./img/goside.svg" alt="go" class="prices__buy-button-img"></a></td>
-		  </tr>
-		  <tr class="prices__table-row">
-			 <td class="prices__table-data">Замена программного обеспечения</td>
-			 <td class="prices__table-data">1000 ₽</td>
-			 <td class="prices__table-data">30 - 120 мин</td>
-			 <td class="prices__table-data"><a href="#" class="prices__buy-button">Заказать<img src="./img/goside.svg" alt="go" class="prices__buy-button-img"></a></td>
-		  </tr>
-		</table>
-		<div class="prices__swiper">
-		  <div class="swiper-container prices__swiper-container">
-			 <div class="swiper-wrapper">
-	 
-				<div class="swiper-slide">
-				  <div class="prices__card">
-					 <h3 class="prices__card-title">Ремонтные услуги</h3>
-					 <p class="prices__card-text">Диагностика</p>
-					 <h3 class="prices__card-title">Цена</h3>
-					 <p class="prices__card-text">Бесплатно</p>
-					 <h3 class="prices__card-title">Срок</h3>
-					 <p class="prices__card-text">30 мин</p>
-					 <a href="#" class="prices__card-buy-button prices__buy-button">Заказать<img src="./img/goside.svg" alt="go" class="prices__buy-button-img">
-					 </a>
-				  </div>
-				</div>
-	 
-				<div class="swiper-slide">
-				  <div class="prices__card">
-					 <h3 class="prices__card-title">Ремонтные услуги</h3>
-					 <p class="prices__card-text">Замена дисплея</p>
-					 <h3 class="prices__card-title">Цена</h3>
-					 <p class="prices__card-text">1000 ₽</p>
-					 <h3 class="prices__card-title">Срок</h3>
-					 <p class="prices__card-text">30 - 120 мин</p>
-					 <a href="#" class="prices__card-buy-button prices__buy-button">Заказать<img src="./img/goside.svg" alt="go" class="prices__buy-button-img">
-					 </a>
-				  </div>
-				</div>
-	 
-				<div class="swiper-slide">
-				  <div class="prices__card">
-					 <h3 class="prices__card-title">Ремонтные услуги</h3>
-					 <p class="prices__card-text">Замена полифонического динамика</p>
-					 <h3 class="prices__card-title">Цена</h3>
-					 <p class="prices__card-text">1000 ₽</p>
-					 <h3 class="prices__card-title">Срок</h3>
-					 <p class="prices__card-text">30 - 120 мин</p>
-					 <a href="#" class="prices__card-buy-button prices__buy-button">Заказать<img src="./img/goside.svg" alt="go" class="prices__buy-button-img">
-					 </a>
-				  </div>
-				</div>
-	 
-				<div class="swiper-slide">
-				  <div class="prices__card">
-					 <h3 class="prices__card-title">Ремонтные услуги</h3>
-					 <p class="prices__card-text">Тестирование с выдачей технического заключения</p>
-					 <h3 class="prices__card-title">Цена</h3>
-					 <p class="prices__card-text">1000 ₽</p>
-					 <h3 class="prices__card-title">Срок</h3>
-					 <p class="prices__card-text">30 - 120 мин</p>
-					 <a href="#" class="prices__card-buy-button prices__buy-button">Заказать<img src="./img/goside.svg" alt="go" class="prices__buy-button-img">
-					 </a>
-				  </div>
-				</div>
-	 
-				<div class="swiper-slide">
-				  <div class="prices__card">
-					 <h3 class="prices__card-title">Ремонтные услуги</h3>
-					 <p class="prices__card-text">Замена программного обеспечения</p>
-					 <h3 class="prices__card-title">Цена</h3>
-					 <p class="prices__card-text">1000 ₽</p>
-					 <h3 class="prices__card-title">Срок</h3>
-					 <p class="prices__card-text">30 - 120 мин</p>
-					 <a href="#" class="prices__card-buy-button prices__buy-button">Заказать<img src="./img/goside.svg" alt="go" class="prices__buy-button-img">
-					 </a>
-				  </div>
-				</div>
-			 </div>
-			 <div class="swiper-pagination prices__swiper-pagination">
-			 </div>
-		  </div>	 
-		</div>
-		<p class="prices__text">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для
-		 получения
-		 коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
-	  <p class="prices__offer"><a href="#" class="prices__offer-link">Получить коммерческое предложение</a></p>
-	 </div>
-	 <footer class="page-footer">
-		<p class="page-footer__text">© 2019 CPS <br>
-		  Разработано командой Apesong </p>
-		<p class="page-footer__text"><a href="#" class="page-footer__privacy-policy">Политика конфиденциальности</a></p>
-		<p class="page-footer__text">Информация, размещенная на данной странице, не является публичной офертой</p>
-	 </footer>
+    <footer class="page-footer">
+      <p class="page-footer__text">© 2019 CPS <br>
+        Разработано командой Apesong </p>
+      <p class="page-footer__text"><a href="#" class="page-footer__privacy-policy">Политика конфиденциальности</a></p>
+      <p class="page-footer__text">Информация, размещенная на данной странице, не является публичной офертой</p>
+    </footer>
   </div>
   <div class="sidebar__container">
     <div class="sidebar">
