@@ -585,7 +585,7 @@ body {
   @media (min-width: 600px) {
     .brands__container {
       display: flex;
-      height: 200px; } }
+      height: 170px; } }
 
 .brands__item {
   box-sizing: border-box;
