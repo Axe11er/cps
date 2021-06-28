@@ -1074,7 +1074,7 @@ body {
   margin: 0;
   list-style: none; }
 
-.sidebar__menu-item:target .sidebar__menu-item-link::after {
+.sidebar__menu-item:focus .sidebar__menu-item-link::after {
   opacity: 1; }
 
 @media (min-width: 768px) {
@@ -1088,10 +1088,10 @@ body {
   color: #1B1C21;
   padding: 5px;
   transition: all 0.1s linear; }
-  .sidebar__menu-item-link:target {
+  .sidebar__menu-item-link:focus {
     background: rgba(98, 235, 212, 0.2);
     transform: scale(1.1); }
-    .sidebar__menu-item-link:target::after {
+    .sidebar__menu-item-link:focus::after {
       display: block;
       content: "";
       width: 100%;
