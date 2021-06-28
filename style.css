@@ -1065,7 +1065,7 @@ body {
     transform: scale(1.1);
     -webkit-filter: hue-rotate(-135deg);
             filter: hue-rotate(-135deg); }
-  @media (min-width: 768px) {
+  @media (min-width: 1065px) {
     .sidebar__icon :hover {
       transform: scale(1.1);
       -webkit-filter: hue-rotate(-135deg);
@@ -1090,7 +1090,7 @@ body {
 .sidebar__menu-item:active .sidebar__menu-item-link::after {
   opacity: 1; }
 
-@media (min-width: 768px) {
+@media (min-width: 1065px) {
   .sidebar__menu-item:hover .sidebar__menu-item-link::after {
     opacity: 1; } }
 
@@ -1115,7 +1115,7 @@ body {
   .sidebar__menu-item-link:active {
     background: rgba(98, 235, 212, 0.2);
     transform: scale(1.1); }
-  @media (min-width: 768px) {
+  @media (min-width: 1065px) {
     .sidebar__menu-item-link {
       margin: 32px 0; }
       .sidebar__menu-item-link:hover {
