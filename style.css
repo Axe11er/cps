@@ -1183,7 +1183,8 @@ body {
   margin-bottom: 50px; }
 
 .prices__table-container {
-  min-width: 1065px; }
+  max-width: 1065px;
+  margin: 0 auto; }
 
 .prices__table {
   height: 324px;
@@ -1233,6 +1234,10 @@ body {
 
 .prices__buy-button-img {
   margin: 0 5px; }
+
+.prices__text-container {
+  max-width: 1065px;
+  margin: 0 auto; }
 
 .prices__text {
   margin-top: 32px;
