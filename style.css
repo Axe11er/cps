@@ -521,7 +521,8 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
 
 .services__read-more-text--closed::before {
   content: url(./static/show-more-open.svg);
@@ -1180,6 +1181,9 @@ body {
   color: #7E7E82;
   background-image: linear-gradient(to right, #f8f8f8 50%, #ffffff 100%);
   margin-bottom: 50px; }
+
+.prices__table-container {
+  min-width: 1065px; }
 
 .prices__table {
   height: 324px;
