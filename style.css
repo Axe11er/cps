@@ -1054,7 +1054,7 @@ body {
 
 .sidebar__second-icons-groop {
   margin-top: auto; }
-  @media (min-width: 1440px) {
+  @media (min-width: 1530px) {
     .sidebar__second-icons-groop {
       margin-top: 100px; } }
 
@@ -1065,8 +1065,8 @@ body {
     transform: scale(1.1);
     -webkit-filter: hue-rotate(-135deg);
             filter: hue-rotate(-135deg); }
-  @media (min-width: 1065px) {
-    .sidebar__icon :hover {
+  @media (min-width: 1530px) {
+    .sidebar__icon:hover {
       transform: scale(1.1);
       -webkit-filter: hue-rotate(-135deg);
               filter: hue-rotate(-135deg); } }
