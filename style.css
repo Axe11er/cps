@@ -499,7 +499,7 @@ body {
   flex-grow: 2; }
   @media (min-width: 1120px) {
     .services__content-article {
-      height: 200px; } }
+      height: auto; } }
 
 .services__content-text {
   padding: 0 16px;
@@ -1005,7 +1005,8 @@ body {
               filter: drop-shadow(-2px 0px 4px rgba(69, 79, 126, 0.02)) drop-shadow(16px 0px 52px rgba(14, 24, 80, 0.2)); } }
   @media (min-width: 1530px) {
     .sidebar {
-      box-shadow: none;
+      -webkit-filter: none;
+              filter: none;
       width: 320px;
       position: fixed; } }
 
