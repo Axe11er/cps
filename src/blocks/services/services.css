@@ -162,14 +162,14 @@
 
 @media (min-width: 1120px) {
   .services__content-article {
-    height: 200px;
+    height: auto;
   }
 }
 
 .services__content-text {
   padding: 0 16px;
-  height: 105px;
   overflow: hidden;
+  height: 105px;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
@@ -183,6 +183,7 @@
 }
 
 .services__read-more-text {
+	cursor: pointer;
 	position: relative;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -212,6 +213,11 @@
   position: absolute;
   left: -18px;
   top: -3px;
+}
+
+.services__image {
+	display: flex;
+	justify-content: center;
 }
 
 .services__image-img {

@@ -36,10 +36,14 @@ toggleRepairGadgetsReadMore();
 
 import {
   switchTabs,
-  switchReadMore
+  switchReadMore,
+  toggleServicesCallPopup,
+  toggleServicesFeedbackPopup
 } from '../blocks/services/js/services';
 switchTabs();
 switchReadMore();
+toggleServicesCallPopup();
+toggleServicesFeedbackPopup();
 
 import {
   addPricesSwiper

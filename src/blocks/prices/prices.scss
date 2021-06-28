@@ -13,6 +13,11 @@
   margin-bottom: 50px;
 }
 
+.prices__table-container {
+	max-width: 1065px;
+	margin: 0 auto;
+}
+
 .prices__table {
   height: 324px;
   width: 100%;
@@ -70,6 +75,12 @@
 .prices__buy-button-img {
   margin: 0 5px;
 
+}
+
+.prices__text-container {
+	max-width: 1065px;
+	margin: 0 auto;
+	padding-bottom: 20px;
 }
 
 .prices__text {

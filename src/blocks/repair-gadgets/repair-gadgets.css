@@ -31,15 +31,15 @@
 
 .repair-gadgets__container {
   display: none;
-  height: 200px;
+  height: 170px;
   overflow: hidden;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
   margin-bottom: 15px;
   max-width: 1065px;
   margin: 0 auto;
@@ -55,20 +55,20 @@
 
 .repair-gadgets__item {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 240px;
   height: 160px;
   background-color: #ffffff;
-  margin: 16px 8px 8px 16px;
+  margin: 0 16px 16px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   padding: 16px;
   border: 1px solid #EAEAEA;
   border-radius: 6px;
@@ -77,16 +77,21 @@
 .repair-gadgets__item-title {
   margin: 0;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .repair-gadgets__item-button {
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
   width: 30px;
   height: 30px;
   margin: 10px;
+}
+
+.repair-gadgets__read-more-container {
+  max-width: 1065px;
+  margin: 0 auto;
 }
 
 .repair-gadgets__read-more {
@@ -95,11 +100,13 @@
 
 .repair-gadgets__read-more-label {
   display: none;
+  position: relative;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  margin-left: 16.5%;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 15px;
+  cursor: pointer;
 }
 
 @media (min-width: 600px) {
@@ -110,21 +117,16 @@
 
 .repair-gadgets__read-more-label--closed::before {
   content: url("./img/show-more-open.svg");
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  position: relative;
-  left: -10px;
-  top: 6px;
+  position: absolute;
+  left: -20px;
+  top: -3px;
 }
 
 .repair-gadgets__read-more-label--opened::before {
   content: url("./img/show-more-close.svg");
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  position: relative;
-  left: -10px;
-  top: 6px;
+  position: absolute;
+  left: -20px;
+  top: -3px;
 }
+
 /*# sourceMappingURL=repair-gadgets.css.map */

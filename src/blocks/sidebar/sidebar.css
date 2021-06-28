@@ -58,7 +58,7 @@
   right: 0;
   bottom: 0;
   overflow-y: auto;
-  display: none;
+  display: flex;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
@@ -144,7 +144,7 @@
   list-style: none;
 }
 
-.sidebar__menu-item:hover .sidebar__menu-item-link::after {
+.sidebar__menu-item:active .sidebar__menu-item-link::after {
   opacity: 1;
 }
 
@@ -172,7 +172,7 @@
   opacity: 0;
 }
 
-.sidebar__menu-item-link:hover {
+.sidebar__menu-item-link:active {
   background: rgba(98, 235, 212, 0.2);
   -webkit-transform: scale(1.1);
           transform: scale(1.1);

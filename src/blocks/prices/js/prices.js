@@ -1,9 +1,9 @@
 const addPricesSwiper = () => {
-  new Swiper('.swiper-container', {
+  new Swiper('.prices__swiper-container', {
     pagination: {
-      el: '.swiper-pagination',
+      el: '.prices__swiper-pagination',
       clickable: true,
-      bulletClass: 'swiper-pagination-bullet'
+      bulletClass: 'prices__swiper-pagination-bullet'
     },
     slidesPerView: 1.3,
     spaceBetween: 16,

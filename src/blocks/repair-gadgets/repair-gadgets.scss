@@ -28,7 +28,7 @@
 
 .repair-gadgets__container {
   display: none;
-  height: 200px;
+  height: 170px;
   overflow: hidden;
   justify-content: flex-start;
   flex-flow: row wrap;
@@ -46,7 +46,7 @@
   width: 240px;
   height: 160px;
   background-color: $repairGadgets__itemBgColor;
-  margin: 16px 8px 8px 16px;
+  margin: 0 16px 16px 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -67,14 +67,21 @@
   margin: 10px;
 }
 
+.repair-gadgets__read-more-container {
+	max-width: 1065px;
+	margin: 0 auto;
+ }
+
 .repair-gadgets__read-more {
   display: none;
 }
 
 .repair-gadgets__read-more-label {
   display: none;
+  position: relative;
   user-select: none;
-  margin-left: 16.5%;
+  margin-left: 15px;
+  cursor: pointer;
 
   @media (min-width: 600px) {
     display: inline;
@@ -83,20 +90,14 @@
 
 .repair-gadgets__read-more-label--closed::before {
   content: url("./img/show-more-open.svg");
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  position: relative;
-  left: -10px;
-  top: 6px;
+  position: absolute;
+  left: -20px;
+  top: -3px;
 }
 
 .repair-gadgets__read-more-label--opened::before {
   content: url("./img/show-more-close.svg");
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  position: relative;
-  left: -10px;
-  top: 6px;
+  position: absolute;
+  left: -20px;
+  top: -3px;
 }

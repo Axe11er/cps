@@ -21,11 +21,11 @@ const toggleRepairGadgetsReadMore = () => {
 toggleRepairGadgetsReadMore();
 
 
-new Swiper('.swiper-container', {
+new Swiper('.repair-gadgets__swiper-container', {
   pagination: {
-    el: '.swiper-pagination',
+    el: '.repair-gadgets__swiper-pagination',
     clickable: true,
-    bulletClass: 'swiper-pagination-bullet'
+    bulletClass: 'repair-gadgets__swiper-pagination-bullet'
   },
   slidesPerView: 1.3,
   spaceBetween: 16,

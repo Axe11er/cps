@@ -15,7 +15,7 @@
 }
 
 .brands__container {
-  height: 100px;
+  height: 170px;
   display: none;
   justify-content: flex-start;
   flex-flow: row wrap;
@@ -26,7 +26,7 @@
 
   @media (min-width: 600px) {
     display: flex;
-    height: 200px;
+    height: 170px;
   }
 }
 
@@ -35,11 +35,16 @@
   width: 240px;
   height: 72px;
   background-color: $brands__itemBgColor;
-  margin: 16px 8px 8px 16px;
+  margin: 0 16px 16px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 16px;
+}
+
+.brands__show-more-container {
+  max-width: 1065px;
+  margin: 0 auto;
 }
 
 .brands__show-more {
@@ -47,8 +52,10 @@
 }
 
 .brands__show-more-label {
-  margin-left: 17%;
+  margin-left: 15px;
   position: relative;
+  user-select: none;
+  cursor: pointer;
   display: none;
 
   @media (min-width: 600px) {

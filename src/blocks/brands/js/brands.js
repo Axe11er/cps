@@ -13,7 +13,7 @@ const toggleShowMore = () => {
     if (!showMoreButton.checked) {
       showMoreButtonLabel.classList.add('brands__show-more-label--closed');
       showMoreButtonLabel.classList.remove('brands__show-more-label--opened');
-      brandsContainer.style = 'height: 200px';
+      brandsContainer.style = 'height: 170px';
       showMoreButtonLabel.textContent = 'Показать все';
     }
   });
