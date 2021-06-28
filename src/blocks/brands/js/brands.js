@@ -2,8 +2,6 @@ let showMoreButton = document.querySelector('.brands__show-more');
 let showMoreButtonLabel = document.querySelector('.brands__show-more-label');
 let brandsContainer = document.querySelector('.brands__container');
 
-
-
 const toggleShowMore = () => {
   showMoreButton.addEventListener('change', function () {
     brandsContainer.style.height = 'auto';

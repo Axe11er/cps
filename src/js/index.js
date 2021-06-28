@@ -30,9 +30,11 @@ toggleSidebarCallPopup();
 toggleSidebarFeedbackPopup();
 
 import {
-  toggleRepairGadgetsReadMore
+  toggleRepairGadgetsReadMore,
+  addRepairGadgetSwiper
 } from '../blocks/repair-gadgets/js/repair-gadgets';
 toggleRepairGadgetsReadMore();
+//addRepairGadgetSwiper();
 
 import {
   switchTabs,
@@ -48,4 +50,4 @@ toggleServicesFeedbackPopup();
 import {
   addPricesSwiper
 } from '../blocks/prices/js/prices'
-addPricesSwiper();
+//addPricesSwiper();
