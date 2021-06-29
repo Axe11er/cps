@@ -1030,7 +1030,6 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  overflow-y: auto;
   display: none;
   flex: 0 0 auto; }
   @media (min-width: 1530px) {
