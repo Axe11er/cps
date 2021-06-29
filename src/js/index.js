@@ -9,14 +9,10 @@ toggleBurgerMenu();
 togglePageHeaderCallPopup();
 togglePageHeaderFeedbackPopup();
 
-
-
 import {
-  toggleShowMore,
-  addBrandsSwiper
+  toggleShowMore
 } from '../blocks/brands/js/brands';
 toggleShowMore();
-addBrandsSwiper();
 
 import {
   closeSidebarPopup,
@@ -30,11 +26,9 @@ toggleSidebarCallPopup();
 toggleSidebarFeedbackPopup();
 
 import {
-  toggleRepairGadgetsReadMore,
-  addRepairGadgetSwiper
+  toggleRepairGadgetsReadMore
 } from '../blocks/repair-gadgets/js/repair-gadgets';
 toggleRepairGadgetsReadMore();
-//addRepairGadgetSwiper();
 
 import {
   switchTabs,
@@ -47,7 +41,5 @@ switchReadMore();
 toggleServicesCallPopup();
 toggleServicesFeedbackPopup();
 
-import {
-  addPricesSwiper
-} from '../blocks/prices/js/prices'
-//addPricesSwiper();
+import {brandsSwiper, repairGadgetsSwiper, pricesSwiperContainer} from '../blocks/swiper/swiper';
+

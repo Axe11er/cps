@@ -19,21 +19,6 @@ const toggleRepairGadgetsReadMore = () => {
 
 toggleRepairGadgetsReadMore();
 
-const addRepairGadgetSwiper = () => {
-  new Swiper('.repair-gadgets__swiper-container', {
-    pagination: {
-      el: '.repair-gadgets__swiper-pagination',
-      clickable: true,
-      bulletClass: 'repair-gadgets__swiper-pagination-bullet'
-    },
-    slidesPerView: 1.3,
-    spaceBetween: 16,
-  });
-}
-
-addRepairGadgetSwiper();
-
 export {
-  toggleRepairGadgetsReadMore,
-  addRepairGadgetSwiper
+  toggleRepairGadgetsReadMore
 }
